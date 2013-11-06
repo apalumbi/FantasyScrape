@@ -1,0 +1,92 @@
+﻿<table>
+  <tbody>
+    <tr>
+      <th width="16%">Rank</th>
+      <th width="16%">Team</th>
+      <th width="16%">Total Points</th>
+      <th width="16%">Total Wins</th>
+      <th width="16%">Week Points</th>
+      <th width="16%">Week Wins</th>
+    </tr>
+    <tr>
+      <td width="16%">01 </td>
+      <td dir="ltr" width="16%">Joey Bangs </td>
+      <td width="16%">208.79 </td>
+      <td width="16%">19 </td>
+      <td width="16%">67.80 </td>
+      <td width="16%">5 </td>
+    </tr>
+    <tr>
+      <td width="16%">02 </td>
+      <td dir="ltr" width="16%">Filadelphia Francola </td>
+      <td width="16%">204.83 </td>
+      <td width="16%">18 </td>
+      <td width="16%">63.67 </td>
+      <td width="16%">4 </td>
+    </tr>
+    <tr>
+      <td width="16%">03 </td>
+      <td dir="ltr" width="16%">Dishwashers </td>
+      <td width="16%">214.86 </td>
+      <td width="16%">17 </td>
+      <td width="16%">84.04 </td>
+      <td width="16%">8 </td>
+    </tr>
+    <tr>
+      <td width="16%">04 </td>
+      <td dir="ltr" width="16%">FATS </td>
+      <td width="16%">203.49 </td>
+      <td width="16%">17 </td>
+      <td width="16%">89.12 </td>
+      <td width="16%">9 </td>
+    </tr>
+    <tr>
+      <td width="16%">05 </td>
+      <td dir="ltr" width="16%">The E Team </td>
+      <td width="16%">198.04 </td>
+      <td width="16%">16 </td>
+      <td width="16%">79.98 </td>
+      <td width="16%">7 </td>
+    </tr>
+    <tr>
+      <td width="16%">06 </td>
+      <td dir="ltr" width="16%">Wrongway </td>
+      <td width="16%">193.62 </td>
+      <td width="16%">12 </td>
+      <td width="16%">63.25 </td>
+      <td width="16%">3 </td>
+    </tr>
+    <tr>
+      <td width="16%">07 </td>
+      <td dir="ltr" width="16%">Fighting Amish </td>
+      <td width="16%">179.43 </td>
+      <td width="16%">12 </td>
+      <td width="16%">69.72 </td>
+      <td width="16%">6 </td>
+    </tr>
+    <tr>
+      <td width="16%">08 </td>
+      <td dir="ltr" width="16%">Iggles </td>
+      <td width="16%">168.80 </td>
+      <td width="16%">10 </td>
+      <td width="16%">43.82 </td>
+      <td width="16%">0 </td>
+    </tr>
+    <tr>
+      <td width="16%">09 </td>
+      <td dir="ltr" width="16%">Studabakers </td>
+      <td width="16%">172.14 </td>
+      <td width="16%">9 </td>
+      <td width="16%">50.20 </td>
+      <td width="16%">1 </td>
+    </tr>
+    <tr>
+      <td width="16%">10 </td>
+      <td dir="ltr" width="16%">TD BAR </td>
+      <td width="16%">155.65 </td>
+      <td width="16%">5 </td>
+      <td width="16%">60.78 </td>
+      <td width="16%">2 </td>
+    </tr>
+  </tbody>
+</table>
