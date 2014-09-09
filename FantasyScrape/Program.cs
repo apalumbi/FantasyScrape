@@ -39,7 +39,7 @@ namespace FantasyScrape {
 
 			var printer = new Printer(results);
 
-			Console.WriteLine(printer.PlayoffsStandingsInHTML);
+			Console.WriteLine(printer.StandingsInHTML);
 		}
 
 		private static void DoAllTimeStuff() {

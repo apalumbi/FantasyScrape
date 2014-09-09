@@ -15,8 +15,8 @@ using System.Xml;
 namespace FantasyScrape.DataRetrieval {
 
 	public class LiveDataRetriever : IDataRetriever {
-		static string ConsumerKey = "dj0yJmk9eGhEN3V4Y1YzTlF6JmQ9WVdrOU5YSlhha1J5TjJVbWNHbzlOak15T1RBMk9EWXkmcz1jb25zdW1lcnNlY3JldCZ4PTBk";
-		static string ConsumerSecret = "e56da845a8fe81155d5149f361833fe64ebf5f33";
+		static string ConsumerKey = "dj0yJmk9OFA0RmVCaW9IWDJUJmQ9WVdrOWMwTm1jMG81TkRRbWNHbzlNQS0tJnM9Y29uc3VtZXJzZWNyZXQmeD1iZA--";
+		static string ConsumerSecret = "be3a30336c244af8a6bc49885169f53cd8e0f56c";
 
 		Dictionary<string, string> responseDictionary = new Dictionary<string, string>();
 		
