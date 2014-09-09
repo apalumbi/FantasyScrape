@@ -8,10 +8,10 @@ using FantasyScrape.DomainObjects;
 namespace FantasyScrape.Output {
 	public class Printer {
 		private readonly List<WeekResult> results;
-		private string PlayoffTeam1 = "Wrongway";
-		private string PlayoffTeam2 = "JoeyBangs";
-		private string PlayoffTeam3 = "The E Team";
-		private string PlayoffTeam4 = "Maclin On Your Girl";
+		private string PlayoffTeam1 = "Maclin On Your Girl";
+		private string PlayoffTeam2 = "Fighting Amish";
+		private string PlayoffTeam3 = "Filadelphia Francola";
+		private string PlayoffTeam4 = "Dishwashers";
 
 		public Printer(List<WeekResult> results) {
 			this.results = results;

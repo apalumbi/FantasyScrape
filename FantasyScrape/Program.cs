@@ -39,17 +39,20 @@ namespace FantasyScrape {
 
 			var printer = new Printer(results);
 
-			Console.WriteLine(printer.StandingsInHTML);
+			Console.WriteLine(printer.PlayoffsStandingsInHTML);
 		}
 
 		private static void DoAllTimeStuff() {
-			var allTimeDataManager = new AllTimeDataManager();
+			var dataRetriever = new DataRetrievalManager();
 
-			var results = allTimeDataManager.GetData();
+			foreach (var year in Keys.AllYears) {
+				var results = dataRetriever.GetWeekResults(year);
 
-			var printer = new AllTimePrinter(results);
+				var printer = new Printer(results);
 
-			Console.WriteLine(printer.UniqueTeamNames);
+				Console.WriteLine(printer.Standings);
+				Console.ReadLine();
+			}
 		}
 	}
 }

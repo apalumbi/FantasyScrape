@@ -66,20 +66,20 @@ namespace FantasyScrape.Output {
 
 				foreach (var result in results) {
 					foreach (var team in result.Teams) {
-							var numberOfBenchPlayers = 0;
-							foreach (var player in team.Roster.Where(p => !p.IsStarter)) {
-								if (player.PointsValue >= 20) {
-									numberOfBenchPlayers++;
-									if (numberOfBenchPlayers > 1) {
-										if (data.ContainsKey(team.TeamName)) {
-											data[team.TeamName] = team.TeamName + " had " + numberOfBenchPlayers + " players on week " + result.Week + " in " + result.Year.theYear;
-										}
-										else {
-											data.Add(team.TeamName, team.TeamName + " had " + numberOfBenchPlayers + " players on week " + result.Week + " in " + result.Year.theYear);
-										}
+						var numberOfBenchPlayers = 0;
+						foreach (var player in team.Roster.Where(p => !p.IsStarter)) {
+							if (player.PointsValue >= 20) {
+								numberOfBenchPlayers++;
+								if (numberOfBenchPlayers > 1) {
+									if (data.ContainsKey(team.TeamName)) {
+										data[team.TeamName] = team.TeamName + " had " + numberOfBenchPlayers + " players on week " + result.Week + " in " + result.Year.theYear;
+									}
+									else {
+										data.Add(team.TeamName, team.TeamName + " had " + numberOfBenchPlayers + " players on week " + result.Week + " in " + result.Year.theYear);
 									}
 								}
 							}
+						}
 					}
 				}
 
@@ -89,6 +89,36 @@ namespace FantasyScrape.Output {
 				}
 				return output.ToString();
 			}
+		}
+
+		public string Week14Leaders {
+			get {
+				var leaders = new Dictionary<string, Team>();
+				foreach (var item in results) {
+					if (item.Week == "14") {
+						foreach (var team in item.Teams) {
+							if (!leaders.ContainsKey(item.Year.theYear)) {
+								leaders.Add(item.Year.theYear, team);
+								continue;
+							}
+
+							var currentLeader = leaders[item.Year.theYear];
+							if (decimal.Parse(currentLeader.TotalPoints) < decimal.Parse(team.TotalPoints)) {
+								leaders[item.Year.theYear] = team;
+							}
+						}
+					}
+				}
+
+				var result = new StringBuilder();
+
+				foreach (var item in leaders) {
+					result.AppendLine(item.Key + " " + item.Value.TotalPoints);
+				}
+
+				return result.ToString();
+			}
+
 		}
 	}
 }
