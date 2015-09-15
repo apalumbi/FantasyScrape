@@ -21,10 +21,11 @@ namespace FantasyScrape.Utilities {
 		public static readonly Year year2012 = new Year("273.l.658205", "2012");
 		public static readonly Year year2013 = new Year("314.l.920757", "2013");
 		public static readonly Year year2014 = new Year("331.l.1068435", "2014");
+        public static readonly Year year2015 = new Year("348.l.109874", "2015");
 		//select * from fantasysports.games where game_key="331"  -- YQL to get game key
 
-		public static List<Year> AllYears { get { return new List<Year> { year2001, year2002, year2003, year2004, year2005, year2006, year2007, year2008, year2009, year2010, year2011, year2012, year2013 }; } }
+		public static List<Year> AllYears { get { return new List<Year> { year2001, year2002, year2003, year2004, year2005, year2006, year2007, year2008, year2009, year2010, year2011, year2012, year2013, year2014, year2015 }; } }
 
-		public static Year CurrentYear { get { return year2014; } }
+		public static Year CurrentYear { get { return year2015; } }
 	}
 }
